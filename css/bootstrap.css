@@ -191,6 +191,35 @@ table td{
   padding: 0;
   font-size: 20px;
 }
+.img-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-col p{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 30px 0px 0px 0px;
+}
+
+[class$='-img']{
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px #aeaeae;
+}
+
+[class$='-logo']{
+    height: 95px;
+    width: 277px;
+    
+    
+}
+
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
   *,
