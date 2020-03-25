@@ -221,7 +221,8 @@ table td{
 }
 .right-b-logo {
     position: relative;
-    right: 0;
+    /* float: right; */
+    margin: 10px 15px 15px 10px;
     margin-bottom: 18px;
     display: block;
 }
