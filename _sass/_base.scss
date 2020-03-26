@@ -154,10 +154,7 @@ header {
     width: 100%;
     min-height: auto;
     @include background-cover;
-    background-image: url('../img/bgimage.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+    background-image: url('../img/bgimage.jpg');
   background-size: cover;
     text-align: center;
     color: white;
