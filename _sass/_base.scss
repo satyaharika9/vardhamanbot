@@ -156,9 +156,7 @@ header {
     @include background-cover;
     background-image: url('../img/bgimage.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
+    background-size: 100%;
     text-align: center;
     color: white;
     .header-content {
