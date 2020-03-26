@@ -155,8 +155,10 @@ header {
     min-height: auto;
     @include background-cover;
     background-image: url('../img/bgimage.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    -moz-background-size: cover;
+    background-size: cover;
     text-align: center;
     color: white;
     .header-content {
