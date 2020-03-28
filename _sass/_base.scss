@@ -163,8 +163,8 @@ aside {
         padding: 100px 15px 100px;
         width: 100%;
         .header-content-inner {
-            h1 {
-                font-weight: 700;
+            h2 {
+                font-weight: bold;
                 text-transform: uppercase;
                 margin-top: 0;
                 margin-bottom: 0;
@@ -173,7 +173,7 @@ aside {
                 margin: 30px auto;
             }
             p {
-                font-weight: 300;
+                font-weight: bold;
                 color: rgba(white, .7);
                 font-size: 16px;
                 margin-bottom: 50px;
