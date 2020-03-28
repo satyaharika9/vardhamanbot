@@ -148,17 +148,15 @@ aside {
 }
 
 // Homepage Header
-
-header {
+    header {
     position: relative;
     width: 100%;
     min-height: auto;
     @include background-cover;
+    background-position: center;
     background-image: url('../img/IMG_20190801_175820.jpg');
-    background-repeat: no-repeat;
-    background-size: 100%;
     text-align: center;
-    color: white;
+    color: black;
     .header-content {
         position: relative;
         text-align: center;
