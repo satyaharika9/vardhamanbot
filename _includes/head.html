@@ -13,19 +13,23 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
     
-    <script async type="text/javascript">
-    !function () {
-      if (window.JOONBOT_WIDGET_ID) {
-        console.warn("Joonbot snippet included twice");
-      } else {
-        window.JOONBOT_WIDGET_ID = "62956b83-dbe4-4777-a21c-53cd41b3041e";
-        var n, o;
-        o = document.createElement("script");
-        o.src = "https://js.joonbot.com/init.js", o.defer = !0, o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous";
-        n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
-      }
-    }()
-    </script>
+    div id="webchat"></div>
+<script src="https://storage.googleapis.com/mrbot-cdn/webchat-latest.js"></script>
+<script>
+  WebChat.default.init({
+    selector: "#webchat",
+    initPayload: "Hello",
+    customData: {"language": "en"}, // arbitrary custom data. Stay minimal as this will be added to the socket
+    socketUrl: "https://vardhamanbot.ml/",
+    socketPath: "/socket.io/",
+    title: "V Bot",
+    subtitle: "Powered by MAPPPING IT SERVICES",
+    params: {
+	"storage": "session"
+	
+	} // can be set to "local"  or "session". details in storage section.
+  })
+</script>
 
     <!-- Custom Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
