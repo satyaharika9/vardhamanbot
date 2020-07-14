@@ -9,6 +9,26 @@
 
   {% include contact.html %}
   <footer>
+   <div id="webchat"></div>
+<script src="https://storage.googleapis.com/mrbot-cdn/webchat-latest.js"></script>
+<script>
+  WebChat.default.init({
+    selector: "#webchat",
+    initPayload: "Hello",
+    customData: {"language": "en"}, // arbitrary custom data. Stay minimal as this will be added to the socket
+    socketUrl: "https://2613b919370d.ngrok.io",
+    socketPath: "/socket.io/",
+    title: "V Bot",
+    subtitle: "Powered by MAPPPING IT SERVICES",
+	profileAvatar: "http://to.avat.ar",
+    openLauncherImage: 'myCustomOpenImage.png',
+    closeLauncherImage: 'myCustomCloseImage.png',
+    params: {
+	"storage": "session"
+	
+	} 
+  })
+</script>
     <div class="container">
       <center><br><p>&copy; MAPPING IT SERVICES 2020. All Rights Resevered</p></center>
     </div>
