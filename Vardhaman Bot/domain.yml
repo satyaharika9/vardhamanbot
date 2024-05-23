@@ -1,0 +1,537 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - sug
+  - new_college
+  - opening_ranks
+  - fee_structure
+  - depar_college
+  - plac_college
+  - trans_college
+  - dir_vardhaman
+  - direct
+  - cse_it_admin
+  - ece_eee
+  - me_ce
+  - main_audi
+  - mini_audi
+  - canteen
+  - fresher
+  - pat
+  - hostel
+  - library
+  - cstad
+  - mba
+  - know_more
+  - bot_challenge
+  - other_questions
+  - vard_rules
+  - dress_code
+  - admission
+  - management
+  - academics
+  - campus_life
+  - incubation
+  - research
+  - principal
+  - why_vardhaman
+  - IEEE
+  - admission_process
+  - admission_criteria
+  - UG_PG
+  - Cse_detail
+  - ai_detail
+  - It_detail
+  - ECE_detail
+  - EEE_detail
+  - Ce_detail
+  - Mech_detail
+  - Freshman_detail
+  - MBA_detail
+  - Accreditation
+  - Courses
+  - Examinations
+  - Academic_Calendar
+  - Governing_Body
+  - Academic_Council
+  - Pocily_Documents
+  - Industry_Institute_Interaction
+  - research_and_consultancy
+  - a_r
+  - anti_ragging
+  - Alumni
+  - campus_int
+  - msme
+  - thib
+  - tie
+  - wf
+  - csehod
+  - aihod
+  - ithod
+  - eeehod
+  - ecehod
+  - mechhod
+  - cehod
+  - mbahod
+  - freshmanhod
+  - Queries
+
+responses:
+  utter_greet:
+  - text: "Welcome to Vardhaman College of Engineering. This is VBot,how can I help you?\n\n  Do Type suggestion to know what VBot has to offer"
+
+  utter_sugg:
+  - text: "You can ask :"
+    buttons:
+    - title: "About college"
+      payload: "/new_college"
+    - title: "Directions"
+      payload: "/direct"
+    - title: "Departments"
+      payload: "/depar_college"
+    - title: "Academics"
+      payload: "/academics"
+    - title: "Admissions"
+      payload: "/admission"
+    - title: "Incubation"
+      payload: "/incubation"
+    - title: "Transport"
+      payload: "/trans_college"
+    - title: "Campus initiative"
+      payload: "/campus_int"
+    - title: "Query and Feedback"
+      payload: "/Queries"
+    - title: "Why Vardhaman College"
+      payload: "/why_vardhaman"
+    - title: "Principal"
+      payload: "/principal"
+    - title: "Management"
+      payload: "/management"
+    - title: "Know more"
+      payload: "/know_more"
+
+  utter_direct:
+  - text: "Where do you want V Bot to direct:"
+    buttons:
+    - title: "CSE/IT/ADMIN OFFICE BLOCK"
+      payload: "/cse_it_admin"
+    - title: "MECH/CIVIL BLOCK"
+      payload: "/me_ce"
+    - title: "ECE/EEE/MBA BLOCK"
+      payload: "/ece_eee"
+    - title: "MAIN AUDITORIUM"
+      payload: "/main_audi"
+    - title: "MINI AUDITORIUM/LIBRARY"
+      payload: "/mini_audi"
+    - title: "PAT/FRESHERS BLOCK"
+      payload: "/pat"
+    - title: "CANTEEN"
+      payload: "/canteen"
+    - title: " COLLEGE HOSTEL"
+      payload: "/hostel"
+    - title: " CRICKET STADIUM"
+      payload: "/cstad"
+
+  utter_cheer_up:
+  - text: "Sorry, Please give your feedback ."
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, Please give your feedback!"
+
+  utter_goodbye:
+  - text: "Bye. See you later."
+
+  utter_default:
+  - text: "Sorry, I didn't understand ."
+
+  utter_abt:
+  - text: "Vardhaman college is affiliated with Jawaharlal Nehru Technological University, Hyderabad (JNTUH), and was approved by AICTE, New Delhi.\n\n
+    It is accredited by National Board of Accreditation and also by National Assessment and Accreditation Council.\n\n
+    Recently UGC, awarded autonomous status to the college for 6 years.\n\n
+    The National Institutional Ranking Framework (NIRF) ranked it 143 among engineering colleges in 2020."
+
+  utter_dept:
+  - text: "It offers B.Tech degrees in: \n\n"
+    buttons:
+    - title: "Computer Science Engineering"
+      payload: "/Cse_detail"
+    - title: "Computer Science Engineering(AI and ML)"
+      payload: "ai_detail"
+    - title: "Information technology"
+      payload: "/It_detail"
+    - title: "Electrical and Electronics Engineering"
+      payload: "/EEE_detail"
+    - title: "Electronics and communication Engineering"
+      payload: "/ECE_detail"
+    - title: "Mechanical Engineering"
+      payload: "/Mech_detail"
+    - title: "Civil Engineering"
+      payload: "/Ce_detail"
+    - title: "MBA"
+      payload: "/MBA_detail"
+    - title: "Freshman Engineering"
+      payload: "/Freshman_detail"
+
+  utter_link:
+  - text: "Please click link to continue: [Opening & Closing Rank:](https://collegedunia.com/college/19133-vardhaman-college-of-engineering-vce-hyderabad/cutoff)"
+
+  utter_pla:
+  - text: "Please click link to continue: [Placements Info](https://vardhaman.org/placement-home/)"
+
+  utter_fe:
+  - text: "Please click link to continue: [Fees Structure:](https://vardhaman.org/fee-structure/)"
+
+  utter_cs:
+  - text: "Please click link to continue: [CSE/IT/ADMIN BLOCK](https://goo.gl/maps/8E3exCHXTBm1Ji4E8)"
+
+  utter_mec:
+  - text: "Please click link to continue: [MECH/CIVIL](https://goo.gl/maps/HJxPmknFc1dshDQE7)"
+
+  utter_ec:
+  - text: "Please click link to continue: [ECE/EEE/MBA/STUDENT AFFAIRS/CAMPUS RADIO](https://goo.gl/maps/Lk8BxFEHfgNPYpag8)"
+
+  utter_fres:
+  - text: "Please click link to continue: [FRESHMAN/1ST YEAR/pat](https://goo.gl/maps/b5dcJwMfZHnfLkHS7)"
+
+  utter_maud:
+  - text: "Please click link to continue: [MAIN AUDITORIUM](https://goo.gl/maps/taNzStMzc9i4Vpau6)"
+
+  utter_ho:
+  - text: "Please click link to continue: [COLLEGE HOSTEL](https://goo.gl/maps/cp3jbj7kb67rY9xG6)"
+
+  utter_saud:
+  - text: "Please click link to continue: [MINI AUDITORIUM/LIBRARY](https://goo.gl/maps/rshrev7hjdTbWH2k6)"
+
+  utter_cante:
+  - text: "Please click link to continue: [CANTEEN](https://goo.gl/maps/Qe4Qad4mGdr9kHFFA)"
+    image: "https://www.google.com/maps/uv?pb=!1s0x3bcb90c8da620f9d%3A0x19d0d79257022687!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOTrTSauVNhDQ_Cboh9_kl2ZS9xm2QnDWyOOyNT%3Dw300-h200-k-no!5svardhaman%20-%20Google%20Search!15sCgIgAQ&imagekey=!1e10!2sAF1QipOTrTSauVNhDQ_Cboh9_kl2ZS9xm2QnDWyOOyNT&hl=en&sa=X&ved=2ahUKEwju9ae1wZTvAhVXWH0KHXH8BOMQoiowInoECDsQAw#"   
+
+  utter_cstade:
+  - text: "Please click link to continue: [CRICKET STADIUM]( https://goo.gl/maps/u7E3GLiFshNbiYZm9)"
+
+  utter_trans:
+  - text: "Please click link to continue: [TRANSPORT](https://vardhaman.org/transport/)"
+
+  utter_dv:
+  - text: "Please click link to continue: [Vardhaman College of Engineering](https://goo.gl/maps/XKut9ec5zZVxzeMW7)"
+
+  utter_prin:
+  - text: "Please click link to continue:[Principal](https://vardhaman.org/principals-desk/)"
+
+  utter_iamabot:
+  - text: "I am VBOT, powered by MAPPPING IT SERVICES , developed by P.Satya Harika & M.D.N. Akash"
+
+  utter_rule:
+  - text: "Phones are strictly not allowed in Vardhaman college."
+
+  utter_dresscode:
+  - text: "Students are expected to behave with dignity and decorum and in conformity with the discipline of the Institution.\n\n Boys are expected to wear formal dress with tucked-in and formal shoe.\n\n
+    Girl students are expected to wear salwar kurta with chunni.Jeans and sleeveless are not allowed. "
+
+  utter_whyvard:
+  - text: "Your time at VCE is a great opportunity to meet people, try new things, and develop your interests.The following are some statistics.\n\n
+    92 - Faculty With PHD\n\n
+    88 - Labs & Research Centers\n\n
+    579+ - Indexed Publications\n\n
+    50+ - Companies Visited (2018-19)\n\n"
+
+  utter_mang:
+  - text: "Vardhaman College of Engineering was established in 1999 by Vardhaman Educational Society, Hyderabad.\n\n
+    Currently Dr. T. Vijender Reddy, an Orthopedic Surgeon specialized in joint replacements, is the Chairman of the College. \n\n
+    Mr. T. Upender Reddy, a Mechanical Engineer, is the Secretary of the Organization. They are ably supported by Mr. M. Rajasekar Reddy, Vice-Chairman, is an educationist by profession and Mr. E. Prabhakar Reddy, Treasurer and a businessman.\n\n"
+
+  utter_admission_cr:
+  - text: "The following are the details"
+    buttons:
+    - title: "Admission Process"
+      payload: "/admission_process"
+    - title: "Admission Criteria"
+      payload: "/admission_criteria"
+    - title: "Fee Structure"
+      payload: "/fee_structure"
+    - title: "UG & PG Courses"
+      payload: "/UG_PG"
+    - title: "Opening and Closing ranks"
+      payload: "/opening_ranks"
+
+  utter_ap:
+  - text: "Please click link to continue: [Admission Process](https://vardhaman.org/admission-procedure/)"
+
+  utter_acriteria:
+  - text: "Please click link to continue: [Admission Criteria](https://vardhaman.org/criteria-for-admission/)"
+
+  utter_ugpg:
+  - text: "Please click link to know more about UG and PG courses: [UG & PG Courses](https://vardhaman.org/programmes/)"
+
+  utter_cw:
+  - text: "Please click link to continue: [CSE Website](https://vardhaman.org/computer-science-engineering/)"
+
+  utter_chod:
+  - text: "Please click link to continue: [CSE HOD and Faculty](https://vardhaman.org/faculty-profile-cs/)"
+
+  utter_cs_pla:
+  - text: "Please click link to continue: [CSE Placements](https://vardhaman.org/computer-science-placement/)"
+
+  utter_csefa:
+  - text: "Please click link to continue: [CSE Faculty Achievements]( https://vardhaman.org/faculty-achievements/)"
+
+  utter_csesa:
+  - text: "Please click link to continue: [CSE Student Achievements](https://vardhaman.org/students-achievements/)"
+
+  utter_cseroh:
+  - text: "Please click link to continue: [CSE Role of Honour](https://vardhaman.org/role-of-honour/)"
+
+  utter_aiweb:
+  - text: "Please click link to continue: [CSE (AI & ML) Website](https://vardhaman.org/cseartificial-intelligence-and-machine-learning/)"
+
+  utter_aihod:
+  - text: "Please click link to continue: [CSE(AI & ML) HOD/Faculty](https://vardhaman.org/cseartificial-intelligence-and-machine-learning-2/)"
+
+  utter_ecehod:
+  - text: "Please click link to continue: [ECE HOD/Faculty](https://vardhaman.org/faculty-electronics-and-communication/)"
+
+  utter_ecw:
+  - text: "Please click link to continue: [ECE Website](https://vardhaman.org/electronics-and-communication-engineering/)"
+
+  utter_ec_pla:
+  - text: "Please click link to continue: [ECE Placements](https://vardhaman.org/placements-ece/)"
+
+  utter_ecsa:
+  - text: "Please click link to continue: [ECE Student Achievements](https://vardhaman.org/student-achievements/)"
+
+  utter_itw:
+  - text: "Please click link to continue: [IT Website](https://vardhaman.org/information-technology/)"
+
+  utter_it_pla:
+  - text: "Please click link to continue: [IT Placements](https://vardhaman.org/information-technology-campus-placements/)"
+
+  utter_itsa:
+  - text: "Please click link to continue: [IT Roll of Honour](https://vardhaman.org/roll-of-honour-it/)"
+
+  utter_ithod:
+  - text: "Please click link to continue: [IT HOD/Faculty](https://vardhaman.org/faculty-information-technology/)"
+
+  utter_eeew:
+  - text: "Please click link to continue: [EEE Website](https://vardhaman.org/electrical-and-electronics-engineering/)"
+
+  utter_eee_pla:
+  - text: "Please click link to continue: [EEE Placements](https://vardhaman.org/campus-placements-2/)"
+
+  utter_eeehod:
+  - text: "Please click link to continue: [EEE HOD/Faculty](https://vardhaman.org/faculty-electrical-and-electronics/)"
+
+  utter_mew:
+  - text: "Please click link to continue: [MECH Website](https://vardhaman.org/mechanical-engineering/)"
+
+  utter_mee_pla:
+  - text: "Please click link to continue: [MECH Placements](https://vardhaman.org/mechanical-placements/)"
+
+  utter_mehod:
+  - text: "Please click link to continue: [MECH HOD/Faculty](https://vardhaman.org/faculty-mechanical-engineering/)"
+
+  utter_cew:
+  - text: "Please click link to continue: [CIVIL Website](https://vardhaman.org/civil-engineering/)"
+
+  utter_ce_pla:
+  - text: "Please click link to continue: [CIVIL Placements](https://vardhaman.org/civil-engineering-placements/)"
+
+  utter_cesa:
+  - text: "Please click link to continue: [CIVIL Roll of Honour](https://vardhaman.org/roll-of-honour-2/)"
+
+  utter_cehod:
+  - text: "Please click link to continue: [CIVIL HOD/Faculty](https://vardhaman.org/faculty-civil-engineering/)"
+
+  utter_freshw:
+  - text: "Please click link to continue: [FRESHMAN Website](https://vardhaman.org/freshman-engineering/)"
+
+  utter_fresh_pla:
+  - text: "Please click link to continue: [FACULTY Achievements](https://vardhaman.org/acheivements/)"
+
+  utter_freshhod:
+  - text: "Please click link to continue: [FRESHMAN HOD/Faculty](https://vardhaman.org/faculty-freshman-engineering/)"
+
+  utter_mbaw:
+  - text: "Please click link to continue: [MBA Website](https://vardhaman.org/master-of-business-administration/)"
+
+  utter_mba_pla:
+  - text: "Please click link to continue: [MBA Placements](https://vardhaman.org/mba-placements/)"
+
+  utter_mbahod:
+  - text: "Please click link to continue: [MBA HOD/Faculty](https://vardhaman.org/faculty-professors-mba/)"
+
+  utter_academics:
+  - text: "Click on the following"
+    buttons:
+    - title: "Courses/Syllabus"
+      payload: "/Courses"
+    - title: "Accreditation"
+      payload: "/Accreditation"
+    - title: "Examinations"
+      payload: "/Examinations"
+    - title: "Academic Calendar"
+      payload: "/Academic_Calendar"
+    - title: "Govering Body"
+      payload: "/Governing_Body"
+    - title: "Academic Council"
+      payload: "/Academic_Council"
+    - title: "Pocily Documents"
+      payload: "/Pocily_Documents"
+    - title: "Industry Intitute Interaction"
+      payload: "/Industry_Institute_Interaction"
+    - title: "Research"
+      payload: "/research"
+
+  utter_Courses:
+  - text: "Please click link to continue: [Courses/Syllabus]( https://vardhaman.org/courses-syllabus-2/)"
+
+  utter_accre:
+  - text: "Please click link to continue: [Accreditation](https://vardhaman.org/accreditation-2/)"
+
+  utter_exam:
+  - text: "Please click link to continue: [Examinations](https://vardhaman.org/examinations/)"
+
+  utter_ac:
+  - text: "Please click link to continue: [Academic Calendar](https://vardhaman.org/academic-calendar/)"
+
+  utter_gb:
+  - text: "Please click link to continue: [Govering Body](https://vardhaman.org/governing-body-2/)"
+
+  utter_aco:
+  - text: "Please click link to continue: [Academic Council](https://vardhaman.org/academic-council/)"
+
+  utter_res:
+  - text: "Please click link to continue: [Research](https://vardhaman.org/research-4/)"
+
+  utter_pd:
+  - text: "Please click link to continue: [Pocily Documents](https://vardhaman.org/policy-documents/)"
+
+  utter_iii:
+  - text: "Please click link to continue: [Industry Intitute Interaction](https://vardhaman.org/industry-institute-interaction/)"
+
+  utter_events:
+  - text: "Please click link to continue: [EVENTS](https://vardhaman.org/events1/)"
+
+  utter_if:
+  - text: "Please click link to continue: [infrastructure and Facility](https://vardhaman.org/building-area/)"
+
+  utter_gallery:
+  - text: "Please click link to continue: [Gallery](https://vardhaman.org/gallery/)"
+
+  utter_csp:
+  - text: "Please click link to continue: [CSE Publications](https://vardhaman.org/publication/)"
+
+  utter_csepa:
+  - text: "Please click link to continue: [CSE Patents](https://vardhaman.org/computer-science-engineering/patents_cse/)"
+
+  utter_csec:
+  - text: "Please click link to continue: [CSE Consultancy](https://vardhaman.org/consultancy-3/)"
+
+  utter_csef:
+  - text: "Please click link to continue: [CSE Funded Projects](https://vardhaman.org/funded-research-projects/)"
+
+  utter_cseap:
+  - text: "Please click link to continue: [CSE Academic Projects](https://vardhaman.org/2019-2020/)"
+
+  utter_ar:
+  - text: "Please click link to continue: [Awards and Recognizations](https://vardhaman.org/awards-and-recognizations/)"
+
+  utter_antir:
+  - text: "Please click link to continue: [Anti Ragging](https://vardhaman.org/anti-ragging/)"
+
+  utter_alumni:
+  - text: "Please click link to continue: [Alumni](https://alumni.vardhaman.org/)"
+
+  utter_ieee:
+  - text: "Please click link to continue: [IEEE Vardhaman Student Branch](https://ieeevardhaman.org/)"
+
+  utter_cie:
+  - text: "Please click link to continue: [Center for innovation and entrepreneurship (CIE)](https://vardhaman.org/centre-for-innovation-and-incubation/)"
+
+  utter_nisp:
+  - text: "Please click link to continue: [NISP](https://vardhaman.org/national-innovation-and-start-up-policy/)"
+
+  utter_sups:
+  - text: "Please click link to continue: [Startups](https://vardhaman.org/startups-on-campus/)"
+
+  utter_ciecor:
+  - text: "Please click link to continue: [CIE Core Team](https://vardhaman.org/11898-2/)"
+
+  utter_ciead:
+  - text: "Please click link to continue: [CIE Advisory board](https://vardhaman.org/advisory-board/)"
+
+  utter_entr:
+  - text: "Please click link to continue: [Entrepreneurship Events](https://vardhaman.org/entrepreneurship-events/)"
+
+  utter_iaf:
+  - text: "Please click link to continue: [Incubation Application Form](https://vardhaman.org/wp-content/uploads/2020/12/Incubation-Application-Form.pdf)"
+
+  utter_cii:
+  - text: "Please click link to continue: [CII Policy](https://vardhaman.org/wp-content/uploads/2020/12/Incubation-Application-Form.pdf)"
+
+  utter_ipr:
+  - text: "Please click link to continue: [IPR Policy](https://vardhaman.org/wp-content/uploads/2020/12/IPR.pdf)"
+
+  utter_actcal:
+  - text: "Please click link to continue:[IIC 2020-21 Activity Calendar](https://vardhaman.org/wp-content/uploads/2020/12/IIC-2020-21.pdf)"
+
+  utter_ciegallery:
+  - text: "Please click link to continue: [CIE Gallery](https://vardhaman.org/gallery-2/)"
+
+  utter_camp_init:
+  - text: "The following are the details"
+    buttons:
+    - title: "MSME Business Incubator"
+      payload: "/msme"
+    - title: "T-Hub(T-Tribe Program)"
+      payload: "/thib"
+    - title: "TIE GRAD"
+      payload: "/tie"
+    - title: "Wadhwani Foundation"
+      payload: "/wf"
+
+  utter_msmebi:
+  - text: "Please click link to continue: [MSME Business Incubator](https://vardhaman.org/msme-business-incubator/)"
+
+  utter_thubp:
+  - text: "Please click link to continue: [T-Hub(T-Tribe Program)](https://vardhaman.org/t-hub-t-tribe-program/)"
+
+  utter_tieg:
+  - text: "Please click link to continue: [TIE GRAD](https://vardhaman.org/tie-grad/)"
+
+  utter_wfo:
+  - text: "Please click link to continue: [Wadhwani Foundation](https://vardhaman.org/wadhwani-foundation/)"
+
+  utter_query:
+  - text: "Please click link to continue: [Query/Feedback](https://docs.google.com/forms/d/e/1FAIpQLSeFqhPrc-ph2AVL1My7S42JVkWx3dVmLzx9bwLuRiBYm8I1qg/viewform?vc=0&c=0&w=1&flr=0)"
+
+  utter_know:
+  - text: "Click on the folowing buttons"
+    buttons:
+    - title: "Alumni"
+      payload: "/Alumni"
+    - title: "Phone allowance"
+      payload: "/vard_rules"
+    - title: "Dress Code"
+      payload: "/dress_code"
+    - title: "IEEE"
+      payload: "/IEEE"
+    - title: "Awards and Recognization"
+      payload: "/a_r"
+    - title: "Anti- Ragging"
+      payload: "/anti_ragging"
+    - title: "Research and Consultancy"
+      payload: "/research_and_consultancy"
+    - title: "Campus Life"
+      payload: "/campus_life"
+    
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
